@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- REEMPLAZAR https://SITIO.com por el dominio real en todo este archivo (canonical, og:url, og:image, twitter:image y JSON-LD) -->
 <title>Taller Golfadi · Carrocería, pintura, detallado y carritos de golf</title>
-<meta name="description" content="Hojalatería, pintura automotriz de alta gama, detallado y mecánica. Flotillas corporativas, rescate carretero, y venta y reparación de carritos de golf. Presupuesto estimado por WhatsApp al 664 163 6617.">
+<meta name="description" content="Hojalatería, pintura automotriz de alta gama, detallado y mecánica para autos y camiones. Flotillas corporativas, rescate carretero, y venta y reparación de carritos de golf. Presupuesto estimado por WhatsApp al 664 163 6617.">
 <link rel="canonical" href="https://SITIO.com/">
 <meta name="theme-color" content="#16181a">
 
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="es_MX">
 <meta property="og:site_name" content="Taller Golfadi">
 <meta property="og:title" content="Taller Golfadi · Carrocería, pintura, detallado y carritos de golf">
-<meta property="og:description" content="Un choque dura minutos… la mala imagen hasta que lo reparas. Autos, flotillas y carritos de golf. Presupuesto estimado por WhatsApp.">
+<meta property="og:description" content="Un choque dura minutos… la mala imagen hasta que lo reparas. Autos, camiones, flotillas y carritos de golf. Presupuesto estimado por WhatsApp.">
 <meta property="og:url" content="https://SITIO.com/">
 <meta property="og:image" content="https://SITIO.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="Taller Golfadi · Carrocería, pintura y detallado">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Taller Golfadi · Carrocería, pintura, detallado y carritos de golf">
-<meta name="twitter:description" content="Autos, flotillas y carritos de golf. Presupuesto estimado por WhatsApp al 664 163 6617.">
+<meta name="twitter:description" content="Autos, camiones, flotillas y carritos de golf. Presupuesto estimado por WhatsApp al 664 163 6617.">
 <meta name="twitter:image" content="https://SITIO.com/og-image.png">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -38,7 +38,7 @@
   "@type": "AutoBodyShop",
   "@id": "https://SITIO.com/#negocio",
   "name": "Taller Golfadi",
-  "description": "Carrocería, pintura y detallado de alta gama. Hojalatería, pintura automotriz, detallado de interiores y exteriores, mecánica y diagnóstico, atención a flotillas corporativas, rescate carretero o en sitio, y venta y reparación de carritos de golf.",
+  "description": "Carrocería, pintura y detallado de alta gama. Hojalatería, pintura automotriz, detallado de interiores y exteriores, mecánica y diagnóstico, reparación de camiones (tractocamiones y rabones), atención a flotillas corporativas, rescate carretero o en sitio, y venta y reparación de carritos de golf.",
   "url": "https://SITIO.com/",
   "image": "https://SITIO.com/og-image.png",
   "telephone": "+52 664 163 6617",
@@ -151,16 +151,20 @@ h2.title{font-size:clamp(42px,7vw,84px);margin:18px 0 22px}
 .div small{display:block;color:var(--light-2);font-size:15px;margin-top:6px}
 .div::after{content:"→";font-size:22px;color:var(--light-3);transition:transform .15s,color .15s}
 .div:hover::after{transform:translateX(4px);color:var(--yellow)}
-@media(min-width:900px){
-  .divs-in{grid-template-columns:repeat(3,1fr)}
-  .div{grid-template-columns:1fr auto;grid-template-rows:auto auto;padding:34px 32px 34px 0;border-top:0}
-  .div + .div{border-left:1px solid var(--line-d);padding-left:32px}
+@media(min-width:760px){
+  .divs-in{grid-template-columns:1fr 1fr;column-gap:40px}
+}
+@media(min-width:1100px){
+  .divs-in{grid-template-columns:repeat(4,1fr);column-gap:0}
+  .div{grid-template-columns:1fr auto;grid-template-rows:auto auto;padding:34px 28px 34px 0;border-top:0}
+  .div + .div{border-left:1px solid var(--line-d);padding-left:28px}
   .div .n{grid-column:1/-1}
 }
 
 /* Secciones */
 .light{background:var(--paper);color:var(--ink)}
 .dark{background:var(--steel);color:var(--light)}
+.light.alt{background:var(--paper-2)}
 .sec{padding:var(--sec) 0}
 
 /* Taller: tarjetas de servicio */
@@ -180,7 +184,7 @@ h2.title{font-size:clamp(42px,7vw,84px);margin:18px 0 22px}
 /* Bloques divididos (empresas, golf) */
 .split{display:grid;gap:clamp(36px,6vw,80px);align-items:center}
 .split .shot{aspect-ratio:4/5}
-@media(min-width:900px){.split{grid-template-columns:1fr 1fr}.split.rev .shot{order:2}}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr}.split.rev .shot{order:-1}}
 .list{list-style:none;margin:32px 0 36px;border-top:1px solid var(--line-l)}
 .dark .list{border-color:var(--line-d)}
 .list li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-l)}
@@ -198,12 +202,15 @@ h2.title{font-size:clamp(42px,7vw,84px);margin:18px 0 22px}
 .steps h3{font-size:21px;font-weight:700}
 .steps p{color:var(--light-2);font-size:17px;max-width:30ch}
 @media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);gap:40px}}
+.light .steps li{border-color:var(--ink)}
+.light .steps b{color:var(--ink)}
+.light .steps p{color:var(--ink-2)}
 
 /* Contacto */
 .contact{background:var(--yellow);color:var(--ink)}
 .contact .eyebrow{color:var(--ink)}
 .contact .eyebrow::before{background:var(--ink)}
-.big{display:block;font:800 clamp(52px,12vw,140px)/1 "Archivo";font-stretch:70%;text-decoration:none;margin:10px 0 30px}
+.big{display:block;white-space:nowrap;font:800 clamp(48px,11vw,112px)/1 "Archivo";font-stretch:70%;text-decoration:none;margin:10px 0 30px}
 .big:hover{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:10px}
 .contact .btn-o:hover{background:var(--ink);color:var(--yellow);border-color:var(--ink)}
 .contact-grid{display:grid;gap:48px}
@@ -213,7 +220,11 @@ h2.title{font-size:clamp(42px,7vw,84px);margin:18px 0 22px}
 .info dd{font-weight:600}
 .info dd a{text-decoration:none}
 .contact .pend{color:var(--ink);background:rgba(0,0,0,.06)}
-.map{margin-top:24px;aspect-ratio:16/9;border:1px dashed rgba(0,0,0,.4);display:grid;place-items:center;padding:20px}
+.quick{margin-top:28px}
+.quick p{font:500 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--ink);font-weight:700;font-size:15px;text-decoration:none;transition:background .15s,color .15s}
+.chips a:hover{background:var(--ink);color:var(--yellow)}
 @media(min-width:960px){.contact-grid{grid-template-columns:7fr 5fr;align-items:end;gap:80px}}
 
 footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1.7 var(--mono);letter-spacing:.04em;text-transform:uppercase}
@@ -233,12 +244,12 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
       <span class="mark" aria-hidden="true">G</span>
       <span><b>GOLFADI</b><small>Carrocería · Pintura · Detallado</small></span>
     </a>
-    <nav class="nav" aria-label="Principal"><a href="#taller">Taller</a><a href="#empresas">Empresas</a><a href="#golf">Carritos de golf</a><a href="#contacto">Contacto</a></nav>
+    <nav class="nav" aria-label="Principal"><a href="#taller">Taller</a><a href="#camiones">Camiones</a><a href="#empresas">Empresas</a><a href="#golf">Carritos de golf</a><a href="#contacto">Contacto</a></nav>
     <a class="btn btn-y" href="https://wa.me/526641636617?text=Hola%2C%20quiero%20un%20presupuesto%20estimado.">WhatsApp</a>
     <details class="menu">
       <summary aria-label="Abrir menú"><i></i>Menú</summary>
       <nav class="menu-panel" aria-label="Principal (móvil)">
-        <a href="#taller" onclick="this.closest('details').open=false">Taller</a><a href="#empresas" onclick="this.closest('details').open=false">Empresas</a><a href="#golf" onclick="this.closest('details').open=false">Carritos de golf</a><a href="#contacto" onclick="this.closest('details').open=false">Contacto</a>
+        <a href="#taller" onclick="this.closest('details').open=false">Taller</a><a href="#camiones" onclick="this.closest('details').open=false">Camiones</a><a href="#empresas" onclick="this.closest('details').open=false">Empresas</a><a href="#golf" onclick="this.closest('details').open=false">Carritos de golf</a><a href="#contacto" onclick="this.closest('details').open=false">Contacto</a>
         <a class="btn btn-y" href="https://wa.me/526641636617?text=Hola%2C%20quiero%20un%20presupuesto%20estimado.">Presupuesto por WhatsApp</a>
       </nav>
     </details>
@@ -264,16 +275,17 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
 
   <nav class="divs" aria-label="Lo que hacemos">
     <div class="wrap divs-in">
-      <a class="div" href="#taller"><span class="n">01</span><span><b>Taller</b><small>Hojalatería, pintura, detallado y mecánica</small></span></a>
-      <a class="div" href="#empresas"><span class="n">02</span><span><b>Empresas</b><small>Flotillas corporativas y rescate</small></span></a>
-      <a class="div" href="#golf"><span class="n">03</span><span><b>Carritos de golf</b><small>Venta y reparación</small></span></a>
+      <a class="div" href="#taller"><span class="n">01</span><span><b>Autos</b><small>Hojalatería, pintura, detallado y mecánica</small></span></a>
+      <a class="div" href="#camiones"><span class="n">02</span><span><b>Camiones</b><small>Tractocamiones, rabones y más</small></span></a>
+      <a class="div" href="#empresas"><span class="n">03</span><span><b>Empresas</b><small>Flotillas corporativas y rescate</small></span></a>
+      <a class="div" href="#golf"><span class="n">04</span><span><b>Carritos de golf</b><small>Venta y reparación</small></span></a>
     </div>
   </nav>
 
   <section class="sec light" id="taller" aria-labelledby="t-taller">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="eyebrow">01 · Taller</span><h2 class="title" id="t-taller">Tu auto, como debe verse.</h2></div>
+        <div><span class="eyebrow">01 · Autos</span><h2 class="title" id="t-taller">Tu auto, como debe verse.</h2></div>
         <p class="lead">Del golpe al acabado final: hojalatería, pintura, detallado y mecánica en un mismo lugar.</p>
       </div>
       <div class="cards">
@@ -321,19 +333,38 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
     </div>
   </section>
 
-  <section class="sec dark stripe" id="empresas" aria-labelledby="t-emp" style="padding-top:0">
+  <section class="sec dark stripe" id="camiones" aria-labelledby="t-cam" style="padding-top:0">
     <div class="wrap split" style="padding-top:var(--sec)">
       <div>
-        <span class="eyebrow">02 · Empresas</span>
+        <span class="eyebrow">02 · Camiones</span>
+        <h2 class="title" id="t-cam">Camiones pesados.</h2>
+        <p class="lead">También reparamos camiones: tractocamiones, rabones y más.</p>
+        <ul class="list">
+          <li><span>Unidades</span><b>Tractocamiones y rabones <em><span class="pend">[PENDIENTE: confirmar otros tipos: tortons, cajas secas, pipas, etc.]</span></em></b></li>
+          <li><span>Servicios</span><b><span class="pend">[PENDIENTE: ¿hojalatería, pintura, mecánica o todos?]</span></b></li>
+        </ul>
+        <div class="btns">
+          <a class="btn btn-y" href="https://wa.me/526641636617?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mi%20cami%C3%B3n.">Presupuesto para mi camión</a>
+        </div>
+      </div>
+      <!-- FOTO TEMPORAL (Unsplash, licencia gratuita). Reemplazar por foto propia: camión en reparación en el taller -->
+<figure class="shot"><img src="https://images.unsplash.com/photo-1689373197720-5de95b80f0ae?auto=format&amp;fit=crop&amp;q=80&amp;w=1200" srcset="https://images.unsplash.com/photo-1689373197720-5de95b80f0ae?auto=format&amp;fit=crop&amp;q=80&amp;w=700 700w, https://images.unsplash.com/photo-1689373197720-5de95b80f0ae?auto=format&amp;fit=crop&amp;q=80&amp;w=1200 1200w, https://images.unsplash.com/photo-1689373197720-5de95b80f0ae?auto=format&amp;fit=crop&amp;q=80&amp;w=1800 1800w" sizes="(max-width:900px) 100vw, 50vw" alt="Tractocamión blanco dentro de un taller" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section class="sec light alt" id="empresas" aria-labelledby="t-emp">
+    <div class="wrap split rev">
+      <div>
+        <span class="eyebrow">03 · Empresas</span>
         <h2 class="title" id="t-emp">Flotillas y rescate.</h2>
-        <p class="lead">Un solo proveedor para la carrocería, la pintura, el detallado y la mecánica de las unidades de tu empresa.</p>
+        <p class="lead">Un solo proveedor para los autos y camiones de tu empresa: carrocería, pintura, detallado y mecánica.</p>
         <ul class="list">
           <li><span>Flotillas</span><b>Atención a flotillas corporativas</b></li>
           <li><span>Rescate</span><b>Rescate carretero y/o en sitio</b></li>
           <li><span>Servicios</span><b>Hojalatería, pintura, detallado, mecánica y mantenimiento programado</b></li>
         </ul>
         <div class="btns">
-          <a class="btn btn-y" href="https://wa.me/526641636617?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20la%20flotilla%20de%20mi%20empresa.">Información para flotillas</a>
+          <a class="btn btn-k" href="https://wa.me/526641636617?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20la%20flotilla%20de%20mi%20empresa.">Información para flotillas</a>
           <a class="btn btn-o" href="https://wa.me/526641636617?text=Hola%2C%20necesito%20rescate%20para%20mi%20auto.">Pedir rescate</a>
         </div>
       </div>
@@ -342,10 +373,10 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
     </div>
   </section>
 
-  <section class="sec light" id="golf" aria-labelledby="t-golf">
-    <div class="wrap split rev">
+  <section class="sec dark" id="golf" aria-labelledby="t-golf">
+    <div class="wrap split">
       <div>
-        <span class="eyebrow">03 · Carritos de golf</span>
+        <span class="eyebrow">04 · Carritos de golf</span>
         <h2 class="title" id="t-golf">Carritos de golf.</h2>
         <p class="lead">Venta y reparación de carritos de golf. Hoy damos servicio a 3 campos de golf.</p>
         <ul class="list">
@@ -354,7 +385,7 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
           <li><span>Campos</span><b>3 campos de golf atendidos <em><span class="pend">[PENDIENTE: nombres y permiso para mencionarlos]</span></em></b></li>
         </ul>
         <div class="btns">
-          <a class="btn btn-k" href="https://wa.me/526641636617?text=Hola%2C%20me%20interesa%20comprar%20un%20carrito%20de%20golf.">Comprar un carrito</a>
+          <a class="btn btn-y" href="https://wa.me/526641636617?text=Hola%2C%20me%20interesa%20comprar%20un%20carrito%20de%20golf.">Comprar un carrito</a>
           <a class="btn btn-o" href="https://wa.me/526641636617?text=Hola%2C%20necesito%20reparar%20un%20carrito%20de%20golf.">Reparar mi carrito</a>
         </div>
       </div>
@@ -363,11 +394,11 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
     </div>
   </section>
 
-  <section class="sec dark" aria-labelledby="t-how" style="background:var(--graphite)">
+  <section class="sec light how" aria-labelledby="t-how">
     <div class="wrap">
       <div class="sec-head">
         <div><span class="eyebrow">Presupuesto estimado</span><h2 class="title" id="t-how">Así de simple.</h2></div>
-        <p class="lead">Para tu auto, tu flotilla o tu carrito de golf.</p>
+        <p class="lead">Para tu auto, tu camión, tu flotilla o tu carrito de golf.</p>
       </div>
       <ol class="steps">
         <li><b>01</b><h3>Escríbenos por WhatsApp</h3><p>Al 664 163 6617, con lo que necesitas.</p></li>
@@ -394,7 +425,16 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
           <div><dt>Dirección</dt><dd><span class="pend">[PENDIENTE: dirección]</span></dd></div>
           <div><dt>Horario</dt><dd><span class="pend">[PENDIENTE: horario]</span></dd></div>
         </dl>
-        <div class="map"><span class="pend">[PENDIENTE: mapa de Google con la dirección]</span></div>
+        <div class="quick">
+          <p>¿Qué necesitas? Escríbenos directo:</p>
+          <nav class="chips" aria-label="Escribir por WhatsApp">
+          <a href="https://wa.me/526641636617?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mi%20auto.">Mi auto</a>
+          <a href="https://wa.me/526641636617?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mi%20cami%C3%B3n.">Mi camión</a>
+          <a href="https://wa.me/526641636617?text=Hola%2C%20quiero%20informaci%C3%B3n%20para%20la%20flotilla%20de%20mi%20empresa.">Mi flotilla</a>
+          <a href="https://wa.me/526641636617?text=Hola%2C%20necesito%20rescate.">Rescate</a>
+          <a href="https://wa.me/526641636617?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20carritos%20de%20golf.">Carrito de golf</a>
+          </nav>
+        </div>
       </div>
     </div>
   </section>
@@ -403,7 +443,7 @@ footer{background:var(--ink);color:var(--light-3);padding:32px 0;font:500 12px/1
 <footer>
   <div class="wrap foot">
     <span>© 2026 Taller Golfadi</span>
-    <span>Taller · Empresas · Carritos de golf</span>
+    <span>Autos · Camiones · Empresas · Carritos de golf</span>
     <a href="tel:+526641636617">+52 664 163 6617</a>
     <span class="pend">[PENDIENTE: ciudad y dirección]</span>
   </div>
